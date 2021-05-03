@@ -1,0 +1,185 @@
+.subheader{
+    max-height: 25rem;
+    width: 100%;
+}
+.name-restaurant{
+    display: inline block;
+}
+.bg{
+    background-color: $grey !important;
+}
+.menu{
+    max-width:100%;
+    height: auto;
+    
+    background-color: $grey;
+    border-radius: 30px 30px 0 0;
+    margin-top: -4rem;
+    padding:0.5rem 0.5rem;
+    z-index: 1;
+    position: relative;
+    
+    @include laptop-only{
+        padding: 2rem ;
+    }
+}
+.menu h3{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 0;
+
+    border-bottom: 2px solid $color-tertiary;
+    padding-bottom: 10px;
+    width: 50px;
+}
+
+
+.starters, .maincourses{
+    max-width: 100%;
+}
+
+.desserts{
+    max-width: 100%; 
+}
+
+.card{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 0 1rem 1rem;
+    margin-bottom: 1rem;
+
+    background-color: $withe;
+    border-radius: 30px;
+    
+   
+    display: flex;
+
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+
+    &__infos{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2rem;
+    }
+
+    &__price{
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 0.75rem;
+        flex:2;
+    }
+
+    &__check{
+
+        background-color: $color-tertiary;
+        margin: -2rem -7rem -2rem 2rem;
+        width: 6rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
+    &:hover &__check {
+        margin-right: -1rem;
+      }
+
+    &__iconwrap{
+        height: 3rem;
+        width: 3rem;
+        margin-left: -1rem;
+        background-color: $withe;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;}
+
+    &:hover &__iconwrap{
+        transform: rotate(0);
+    }
+
+ h4, p{ 
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;}
+}
+
+h4{
+    font-size: 16px;
+    @include laptop-only{
+        font-size: 18px;
+    }
+}
+
+p{
+    font-size: 14px;
+    @include laptop-only{
+        font-size: 16px;
+    }
+}
+
+
+.fas.fa-check{
+    color: $color-tertiary;
+}
+
+.delay{animation-delay: .1s;
+
+&-2 {
+    animation-delay: .2s;
+    }
+&-3 {
+    animation-delay: .3s;
+    }
+
+&-4 {
+    animation-delay: .4s;
+    }
+
+&-5 {
+    animation-delay: .5s;
+    }
+&-6 {
+    animation-delay: .6s;
+    }
+&-7 {
+    animation-delay: .7s;
+    }
+&-8 {
+    animation-delay: .8s;
+    }
+&-9 {
+    animation-delay: .9s;
+    }
+&-10 {
+    animation-delay: .10s;
+    }
+    
+
+}
+
+@keyframes itemAppear {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.reservation{
+    text-align: center;
+    padding: 2rem;
+}

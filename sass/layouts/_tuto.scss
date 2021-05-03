@@ -1,0 +1,76 @@
+.tuto{
+    background-color: $withe;
+    width: 100%;
+
+    h3{
+        padding: 20px 0 20px 20px;
+    }
+    
+
+  &__tutos{
+
+          text-align: center;    
+  }  
+   
+    &__list{
+        text-align: center;
+
+        @include laptop-only{
+            display: inline;
+            justify-content: space-between;
+        }
+    }
+
+    &__card{
+        width: 280px;
+        height: 50px;
+        padding: 10px 5px 10px 5px;
+        line-height: 5px;
+
+        border: none;
+        border-radius: 25px;
+        background-color: $grey;
+        @include shadow;
+        text-align: center;
+        display: inline-flex;
+
+        @include laptop-only{
+          width: 300px;
+          margin-right: 2%;
+          margin-left: 2%;
+          
+        }
+       
+
+    }
+
+    &__step{
+        color: $withe;
+
+        width: 30px;
+        height: 30px;
+
+        background-color:$color-primary;
+        border-radius: 30px;
+
+        line-height: 30px;
+        text-align: center;
+
+        margin: 15px 10px 0 -15px ;
+    }
+
+    &__icon{
+        color: #7e7e7e;
+        margin: 0 10px 0 10px;
+        line-height: 65px;
+
+        @include laptop-only{
+         margin: 0 20px 0 20px;
+        }
+    }
+
+    &__title{
+        padding-right: 15px;
+       
+    }
+}

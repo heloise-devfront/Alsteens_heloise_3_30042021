@@ -1,0 +1,70 @@
+body{
+    max-width: 100%;
+    margin: 0;
+}
+
+main{
+    font-family: "roboto", sans-serif;
+    line-height: 1;
+}
+
+$color-primary:#9356dc;
+$color-secondary:#ff79da;
+$color-tertiary:#99e2d0;
+$black:#000;
+$withe:#fff;
+$grey:#f6f6f6;
+$darkgrey:#eaeaea;
+$darkdarkgrey:#353535;
+
+
+p{
+    font-weight: 300;
+    font-size: 18px;
+}
+h1{
+    font-family: "Shrikhand", "cursive";
+    font-size:40px;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 26px;
+    
+}
+h4{font-weight: 500;
+   font-size: 18px;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 18px;
+}
+h6{
+    font-family: "Shrikhand", "cursive";
+    font-size:20px;
+    color: $withe;
+    line-height: 0.25;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+ul.list{
+    list-style-type:none;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+figure{margin: 0;
+    padding: 0;
+    margin-bottom: 20px;}
+img{
+    object-fit: cover;
+}

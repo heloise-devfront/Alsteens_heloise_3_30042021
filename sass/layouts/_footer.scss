@@ -1,0 +1,15 @@
+.footer{
+    max-width: 100%;
+    height: auto;
+    padding: 2px 0 20px 45px;
+
+    background-color: $darkdarkgrey;
+
+    &__icons{
+        color: $withe;
+        margin-right:10px;
+    }
+}
+.footer a{
+    color: $withe;
+}

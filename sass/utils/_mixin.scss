@@ -1,0 +1,8 @@
+@mixin shadow{
+    box-shadow:  0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+
+@mixin laptop-only{
+    @media (min-width:1200px)  {@content}
+}
+

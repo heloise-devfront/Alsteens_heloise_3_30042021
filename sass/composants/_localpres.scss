@@ -1,0 +1,40 @@
+.local{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+
+    position: relative;
+
+    background-color: $darkgrey;
+    text-align: center;
+    
+
+    &__iconloc{
+        color: $darkdarkgrey;
+    }
+
+    &__input{
+        width: auto;
+        height: 40px;
+        border: none;
+        background-color: $darkgrey;
+    }
+}
+
+input[value="Paris, Belleville"]{
+    color: $darkdarkgrey;
+    font-weight: 600;
+}
+
+.pres{
+    width: 100%;
+    height: auto;
+    background-color: $grey;
+    padding: 10px 0 60px 0;
+    text-align: center;
+
+    &--p{
+        margin-bottom: 40px;
+
+    }
+}

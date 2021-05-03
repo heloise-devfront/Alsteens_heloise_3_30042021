@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
+body {
+  max-width: 100%;
+  margin: 0;
+}
+
+main {
+  font-family: "roboto", sans-serif;
+  line-height: 1;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h6 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 20px;
+  color: #fff;
+  line-height: 0.25;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.header {
+  max-width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px #353535;
+  position: relative;
+  display: inline block;
+}
+.header__logo {
+  text-align: center;
+}
+
+.fas.fa-arrow-left {
+  float: left;
+  line-height: 60px;
+  margin-left: 20px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.tuto {
+  background-color: #fff;
+  width: 100%;
+}
+.tuto h3 {
+  padding: 20px 0 20px 20px;
+}
+.tuto__tutos {
+  text-align: center;
+}
+.tuto__list {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .tuto__list {
+    display: inline;
+    justify-content: space-between;
+  }
+}
+.tuto__card {
+  width: 280px;
+  height: 50px;
+  padding: 10px 5px 10px 5px;
+  line-height: 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  text-align: center;
+  display: inline-flex;
+}
+@media (min-width: 1200px) {
+  .tuto__card {
+    width: 300px;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+.tuto__step {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  background-color: #9356dc;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 15px 10px 0 -15px;
+}
+.tuto__icon {
+  color: #7e7e7e;
+  margin: 0 10px 0 10px;
+  line-height: 65px;
+}
+@media (min-width: 1200px) {
+  .tuto__icon {
+    margin: 0 20px 0 20px;
+  }
+}
+.tuto__title {
+  padding-right: 15px;
+}
+
+.restaurants {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.restaurants h3 {
+  padding-left: 20px;
+  padding-top: 2rem;
+}
+.restaurants__restaurants {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  padding-left: 20px;
+}
+@media (min-width: 1200px) {
+  .restaurants__restaurants {
+    padding-left: 0px;
+  }
+}
+.restaurants__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.restaurants__card {
+  width: 95%;
+  height: auto;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+@media (min-width: 1200px) {
+  .restaurants__card {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.restaurants__img {
+  width: 100%;
+  height: 175px;
+  border-radius: 30px 30px 0 0;
+}
+.restaurants__info {
+  padding: 0 20px 10px 20px;
+  line-height: 0.25;
+  display: inline block;
+  text-align: left;
+}
+.restaurants__badges {
+  background-color: #99e2d0;
+  color: #1b6150;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border: transparent 0px solid;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -100px;
+}
+.restaurants__like {
+  float: right;
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.restaurants__like:hover::before {
+  opacity: 1;
+}
+.restaurants__like::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.restaurants__iconlike {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.restaurants__like:hover .restaurants__iconlike--nobackground {
+  opacity: 0;
+}
+
+.restaurants__info p {
+  font-size: 16px;
+}
+
+.footer {
+  max-width: 100%;
+  height: auto;
+  padding: 2px 0 20px 45px;
+  background-color: #353535;
+}
+.footer__icons {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.animation {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #f6f6f6;
+  animation: animation 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation__circles {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  animation: scale 1s;
+  animation-iteration-count: 1;
+}
+.animation__circles__Container {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+}
+.animation__circles--1 {
+  background-color: #9356dc;
+}
+.animation__circles--2 {
+  background-color: #ff79da;
+  animation-delay: 0.25s;
+}
+.animation__circles--3 {
+  background-color: #99e2d0;
+  animation-delay: 0.5s;
+}
+@keyframes animation {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.subheader {
+  max-height: 25rem;
+  width: 100%;
+}
+
+.name-restaurant {
+  display: inline block;
+}
+
+.bg {
+  background-color: #f6f6f6 !important;
+}
+
+.menu {
+  max-width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  margin-top: -4rem;
+  padding: 0.5rem 0.5rem;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .menu {
+    padding: 2rem;
+  }
+}
+
+.menu h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-left: 0;
+  border-bottom: 2px solid #99e2d0;
+  padding-bottom: 10px;
+  width: 50px;
+}
+
+.starters, .maincourses {
+  max-width: 100%;
+}
+
+.desserts {
+  max-width: 100%;
+}
+
+.card {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+}
+.card__infos {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 2rem;
+}
+.card__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 0.75rem;
+  flex: 2;
+}
+.card__check {
+  background-color: #99e2d0;
+  margin: -2rem -7rem -2rem 2rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.card:hover .card__check {
+  margin-right: -1rem;
+}
+.card__iconwrap {
+  height: 3rem;
+  width: 3rem;
+  margin-left: -1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.card:hover .card__iconwrap {
+  transform: rotate(0);
+}
+.card h4, .card p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+h4 {
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.fas.fa-check {
+  color: #99e2d0;
+}
+
+.delay {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+}
+.delay-5 {
+  animation-delay: 0.5s;
+}
+.delay-6 {
+  animation-delay: 0.6s;
+}
+.delay-7 {
+  animation-delay: 0.7s;
+}
+.delay-8 {
+  animation-delay: 0.8s;
+}
+.delay-9 {
+  animation-delay: 0.9s;
+}
+.delay-10 {
+  animation-delay: 0.1s;
+}
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.reservation {
+  text-align: center;
+  padding: 2rem;
+}
+
+.local {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  background-color: #eaeaea;
+  text-align: center;
+}
+.local__iconloc {
+  color: #353535;
+}
+.local__input {
+  width: auto;
+  height: 40px;
+  border: none;
+  background-color: #eaeaea;
+}
+
+input[value="Paris, Belleville"] {
+  color: #353535;
+  font-weight: 600;
+}
+
+.pres {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+  padding: 10px 0 60px 0;
+  text-align: center;
+}
+.pres--p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  border: transparent 0px solid;
+  border-radius: 30px;
+  background: linear-gradient(to bottom right, #ff79da 20%, #9356dc 80%);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+}
+.btn:hover {
+  opacity: 0.75;
+  box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+
+
+.btn{
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    
+    border: transparent 0px solid;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $color-secondary 20%,$color-primary 80%);
+    @include shadow;
+
+    font-size:20px ;
+    font-weight: 400;
+    color: $withe;
+    z-index: 1;
+
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    
+
+    &:hover{
+       opacity: 0.75;
+        box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.500);      
+    }
+}

@@ -1,0 +1,23 @@
+.header{
+    max-width: 100%;
+    height: 60px;
+
+    background-color: $withe;
+    box-shadow: 0 4px 4px $darkdarkgrey;
+
+    position: relative;
+    display: inline block;
+
+    &__logo{
+        text-align: center;
+    }
+
+}
+
+.fas.fa-arrow-left{
+    float: left;
+    line-height: 60px;
+    margin-left: 20px;
+    height: 2rem;
+    width: 2rem;
+}
