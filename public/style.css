@@ -7,6 +7,8 @@ body {
 main {
   font-family: "roboto", sans-serif;
   line-height: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 p {
@@ -408,8 +410,8 @@ img {
 }
 .card__check {
   background-color: #99e2d0;
-  margin: -2rem -7rem -2rem 2rem;
-  width: 6rem;
+  margin: -2rem -9rem -2rem 2rem;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;

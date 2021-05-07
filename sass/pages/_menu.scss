@@ -81,11 +81,11 @@
     &__check{
 
         background-color: $color-tertiary;
-        margin: -2rem -7rem -2rem 2rem;
-        width: 6rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        margin: -2rem -9rem -2rem 2rem;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition-duration: 0.5s;
     }
     &:hover &__check {
